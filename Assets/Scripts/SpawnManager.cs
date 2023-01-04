@@ -6,6 +6,8 @@ public class SpawnManager : MonoBehaviour
 {
     [SerializeField]
     private GameObject[] animalPrefabs;
+    [SerializeField]
+    private int animalIndex;
 
     // Start is called before the first frame update
     void Start()
@@ -16,6 +18,10 @@ public class SpawnManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            Instantiate(animalPrefabs[animalIndex], new Vector3(0,0,20),
+                animalPrefabs[animalIndex].transform.rotation);
+        }
     }
 }
