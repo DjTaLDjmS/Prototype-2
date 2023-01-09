@@ -7,7 +7,7 @@ public class SpawnManager : MonoBehaviour
     [SerializeField]
     private GameObject[] animalPrefabs;
 
-    private float spawnRangeX = 20;
+    private float spawnRangeX = 10;
     private float spawnPosZ = 20;
 
     private float startDelay = 2;
